@@ -29,8 +29,7 @@ let duration = 0;
 
 function recalculate() {
     let costLabel = document.getElementById("calculated-cost");
-}
-let cost = 0;
+    let cost = 0;
     if (modelName === "XYZ") {
         cost = duration * 100;  
     } 
@@ -38,7 +37,7 @@ let cost = 0;
         cost = duration * 213; 
     }
     costLabel.innerHTML = cost.toFixed(2);
-
+}
 
 /****************** model button logic ******************/
 
@@ -71,7 +70,6 @@ function changeModel() {
 }
 
 modelButton.addEventListener("click", changeModel);
-
 
 
 /****************** duration button logic ******************/
